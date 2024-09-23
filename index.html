@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoFlight Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>EcoFlight Planner</h1>
+    <div id="search-container">
+        <label for="from">From:</label>
+        <select type="text" id="from" name="from" placeholder="Origin Airport Code">
+            <option value=""></option>
+        </select>
+        <label for="to">To:</label>
+        <select type="text" id="to" name="to" placeholder="Destination Airport Code">
+            <option value=""></option>
+        </select>
+        <button id="searchBtn">Find Lowest CO₂ Route</button>
+    </div>
+    <div id="result-container" style="display:none;">
+        <h2>Lowest CO₂ Route</h2>
+        <p id="route"></p>
+        <p id="emissions"></p>
+    </div>
+    <script src="routes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
